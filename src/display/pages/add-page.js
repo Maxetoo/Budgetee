@@ -76,6 +76,7 @@ const AddPage = () => {
           <div className='add-expense-inputContainer'>
             {/* MAIN FORM FOR ADDD EXPENSE  */}
             <form
+              autoComplete='off'
               className='expense-form'
               onSubmit={(e) => {
                 e.preventDefault()
@@ -85,6 +86,7 @@ const AddPage = () => {
               {/* AMOUNT  */}
               <h3 className='expense-amount-name'>Amount:</h3>
               <input
+                autoComplete='false'
                 type='number'
                 className='expense-input'
                 placeholder='Amount'
@@ -112,6 +114,7 @@ const AddPage = () => {
               {/* DESCRIPTION  */}
               <h3 className='expense-amount-name'>Description:</h3>
               <input
+                autoComplete='false'
                 type='text'
                 className='expense-input expense-desc'
                 placeholder='Short Caption'
