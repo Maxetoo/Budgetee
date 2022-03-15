@@ -1,0 +1,13 @@
+$bg-login-container: #232946;
+$info-color: #232946;
+$main-login-bg: #d4d8f0;
+$login-btn: #eebbc3;
+$login-stroke: #121629;
+$login-font: #fffffe;
+$login-btn-text: #b8c1ec;
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}

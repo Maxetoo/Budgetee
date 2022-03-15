@@ -1,0 +1,29 @@
+$displayPage: #fffffe;
+$fontColor: #272343;
+$navStroke: #110f20;
+$navListBg: #272343;
+$iconColor: whitesmoke;
+$boxShadow: #a1a1a1;
+$navItemColor: #d8d4cc;
+$walletBg: #ffff;
+$homeBg: #eaddcf;
+$addPageBg: #f9f4ef;
+$blackUnderline: #000000;
+$whiteColor: #ffff;
+$activeColor: #b8c1ec;
+$expenseDetails: #424242;
+$createExpenseCont: #463f77;
+$createListContainer: #3c346e;
+$removeList: #ff0000;
+$color: #51adcc;
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin grid {
+    display: grid;
+    place-content: center;
+}

@@ -1,0 +1,399 @@
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .list-expense-container {
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 20px;
+        @include flex(column, center, center);
+        color: $whiteColor;
+    }
+    .add-expense-list {
+        max-width: 75%;
+        height: 100px;
+        position: relative;
+        margin-top: 1.5rem;
+        background: $createListContainer;
+        color: $whiteColor;
+        @include flex(row, center, space-between);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px $boxShadow;
+        padding: 1rem;
+        border: solid 1px $navStroke;
+    }
+    .add-expense-img {
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        border: solid 1px $navStroke;
+    }
+    .add-expense-desc-cont {
+        height: 100%;
+        width: 200px;
+        margin-left: 1rem;
+        margin-top: -0.3rem;
+        @include flex(column, flex-start, flex-start);
+    }
+    .add-expense-amount {
+        @include flex(row, center, flex-start);
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+    .add-expense-details {
+        margin-top: 0.2rem;
+        font-size: 13px;
+        line-height: 1rem;
+        font-weight: 500;
+        color: #e4e3e3;
+    }
+    .add-expense-utilis {
+        @include flex(column, flex-end, space-between);
+        height: 100%;
+        width: 80px;
+    }
+    .remove-list {
+        color: $whiteColor;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
+    .time-frame {
+        font-size: 0.4em;
+        text-align: end;
+    }
+    .list-filter-container {
+        margin: 3rem;
+        margin-top: -1.5rem;
+        width: 80%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        gap: 1rem;
+        font-size: 1.3em;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .list-filter {
+        font-weight: 500;
+        border: solid 1px $navStroke;
+        width: auto;
+        @include grid();
+        height: 30px;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px $boxShadow;
+    }
+    .list-filter:hover {
+        color: #ffffff;
+        background: $activeColor;
+        transition: 0.5s all;
+        font-weight: 500;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .list-expense-container {
+        // margin: 3rem;
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 20px;
+        @include flex(column, center, center);
+        color: $whiteColor;
+    }
+    .add-expense-list {
+        width: 75%;
+        height: 130px;
+        position: relative;
+        margin-top: 1.5rem;
+        background: $createListContainer;
+        color: $whiteColor;
+        @include flex(row, center, space-between);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px $boxShadow;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .add-expense-img {
+        height: 100%;
+        width: 100px;
+        border-radius: 50%;
+        border: solid 1px $navStroke;
+        margin-left: 1rem;
+    }
+    .add-expense-desc-cont {
+        height: 100%;
+        width: 200px;
+        margin-left: 2rem;
+        @include flex(column, flex-start, flex-start);
+    }
+    .add-expense-amount {
+        @include flex(row, center, flex-start);
+        font-weight: bold;
+        font-size: 1.7em;
+    }
+    .add-expense-details {
+        margin-top: 0.2rem;
+        font-size: 14px;
+        line-height: 1.3rem;
+        font-weight: 500;
+        color: #e4e3e3;
+    }
+    .add-expense-utilis {
+        @include flex(column, flex-end, space-between);
+        height: 100%;
+        max-width: 400px;
+        margin-left: 5rem;
+        float: right;
+    }
+    .remove-list {
+        color: $whiteColor;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    .time-frame {
+        font-size: 0.8em;
+        text-align: end;
+    }
+    .list-filter-container {
+        margin: 3rem;
+        margin-top: -1.5rem;
+        width: 75%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        gap: 1rem;
+        font-size: 1.3em;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .list-filter {
+        font-weight: 500;
+        border: solid 1px $navStroke;
+        width: auto;
+        @include grid();
+        height: 30px;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px $boxShadow;
+    }
+    .list-filter:hover {
+        color: #ffffff;
+        background: $activeColor;
+        transition: 0.5s all;
+        font-weight: 500;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .list-expense-container {
+        margin-top: 1rem;
+        width: 75%;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $whiteColor;
+    }
+    .add-expense-list {
+        width: 75%;
+        height: 130px;
+        position: relative;
+        margin-top: 1.5rem;
+        background: $createListContainer;
+        color: $whiteColor;
+        @include flex(row, center, space-between);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px $boxShadow;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .add-expense-img {
+        height: 100%;
+        width: 120px;
+        border-radius: 50%;
+        border: solid 1px $navStroke;
+        margin-left: 1rem;
+    }
+    .add-expense-desc-cont {
+        height: 100%;
+        width: 200px;
+        margin-left: 6rem;
+        margin-top: 1rem;
+        @include flex(column, flex-start, flex-start);
+    }
+    .add-expense-details {
+        margin-top: 0.2rem;
+        font-size: 17px;
+        line-height: 1.3rem;
+        font-weight: 500;
+        color: #e4e3e3;
+    }
+    .add-expense-amount {
+        @include flex(row, center, flex-start);
+        font-weight: bold;
+        font-size: 1.9em;
+    }
+    .add-expense-list {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        margin-top: 1.5rem;
+        background: $createListContainer;
+        color: $whiteColor;
+        @include flex(row, center, space-between);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px $boxShadow;
+        cursor: pointer;
+    }
+    .list-filter-container {
+        margin: 3rem;
+        margin-top: -1.5rem;
+        width: 75%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        gap: 1rem;
+        font-size: 1.3em;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .list-filter {
+        font-weight: 500;
+        border: solid 1px $navStroke;
+        width: auto;
+        @include grid();
+        height: 30px;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px $boxShadow;
+    }
+    .list-filter:hover {
+        color: #ffffff;
+        background: $activeColor;
+        transition: 0.5s all;
+        font-weight: 500;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .list-expense-container {
+        // margin: 5rem;
+        margin-top: 1rem;
+        width: 100%;
+        border-radius: 20px;
+        @include flex(column, center, center);
+        color: $whiteColor;
+    }
+    .add-expense-list {
+        width: 75%;
+        height: 130px;
+        position: relative;
+        margin-top: 1.5rem;
+        background: $createListContainer;
+        color: $whiteColor;
+        @include flex(row, center, space-between);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px $boxShadow;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .add-expense-img {
+        height: 90%;
+        width: 110px;
+        border-radius: 50%;
+        border: solid 1px $navStroke;
+        margin-left: 1rem;
+    }
+    .list-expense-container {
+        margin-left: 3rem;
+        margin-top: 1rem;
+        width: 75%;
+        border-radius: 20px;
+        @include flex(column, center, center);
+        color: $whiteColor;
+    }
+    .add-expense-desc-cont {
+        height: 100%;
+        width: 400px;
+        margin-left: 3rem;
+        margin-top: 1rem;
+        @include flex(column, flex-start, flex-start);
+    }
+    .add-expense-list {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        margin-top: 1.5rem;
+        background: $createListContainer;
+        color: $whiteColor;
+        @include flex(row, center, space-between);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 1px 1px 10px $boxShadow;
+        cursor: pointer;
+    }
+    .remove-list {
+        color: $whiteColor;
+        font-size: 1.8em;
+        cursor: pointer;
+    }
+    .time-frame {
+        font-size: 0.8em;
+        text-align: end;
+    }
+    .list-filter-container {
+        margin: 3rem;
+        margin-top: -1.5rem;
+        width: 75%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        gap: 1rem;
+        font-size: 1.3em;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .list-filter {
+        font-weight: 500;
+        border: solid 1px $navStroke;
+        width: auto;
+        @include grid();
+        height: 30px;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px $boxShadow;
+    }
+    .list-filter:hover {
+        color: #ffffff;
+        background: $activeColor;
+        transition: 0.5s all;
+        font-weight: 500;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}

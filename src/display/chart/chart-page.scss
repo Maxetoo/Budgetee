@@ -1,0 +1,180 @@
+@import '../styles/variables-displayPage';
+
+/* Extra small devices (phones, 600px and down) */
+
+.history-page-title {
+    font-size: 1.7em;
+    margin-bottom: 1rem;
+}
+
+.summary-title {
+    font-size: 1.7em;
+    margin-top: 1.7rem;
+    margin-bottom: -1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .history-main-page {
+        @include flex(column, center, none);
+        padding-bottom: 7rem;
+        margin: 3rem;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+    .chart {
+        width: 40%;
+        height: 300px;
+        font-size: 1.5em;
+        @include flex(column, center, center);
+    }
+    .container-chart-summary {
+        width: 85%;
+        margin-top: 3rem;
+        @include flex(column, center, center);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 3px 2px 3px $boxShadow;
+    }
+    td,
+    th {
+        border: solid 1px #000000;
+        text-align: center;
+        padding: 1rem;
+    }
+    th {
+        background: #4444eb;
+        color: #ffffff;
+    }
+    tr:nth-child(even) {
+        background-color: $activeColor;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .history-main-page {
+        @include flex(column, center, center);
+        padding-bottom: 7rem;
+        margin: 3rem;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+    .chart {
+        width: 50%;
+        height: 300px;
+        font-size: 1.5em;
+        @include grid();
+    }
+    .container-chart-summary {
+        width: 2000px;
+        margin-top: 3rem;
+        @include flex(column, center, center);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 3px 2px 3px $boxShadow;
+    }
+    td,
+    th {
+        border: solid 1px #000000;
+        text-align: center;
+        padding: 1rem;
+    }
+    th {
+        background: #4444eb;
+        color: #ffffff;
+    }
+    tr:nth-child(even) {
+        background-color: $activeColor;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .history-main-page {
+        @include flex(column, center, none);
+        padding-bottom: 7rem;
+        margin: 3rem;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+    .chart {
+        width: 50%;
+        height: 300px;
+        font-size: 1.5em;
+        @include flex(column, center, center);
+    }
+    .container-chart-summary {
+        width: 80%;
+        margin-top: 3rem;
+        @include flex(column, center, center);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 3px 2px 3px $boxShadow;
+    }
+    td,
+    th {
+        border: solid 1px black;
+        text-align: center;
+        padding: 1rem;
+    }
+    th {
+        background: #4444eb;
+        color: #ffffff;
+    }
+    tr:nth-child(even) {
+        background-color: $activeColor;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .history-main-page {
+        @include flex(column, center, none);
+        padding-bottom: 7rem;
+        margin: 3rem;
+        margin-left: 30rem;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+    .chart {
+        width: 50%;
+        height: 300px;
+        font-size: 1.5em;
+        @include flex(column, center, center);
+    }
+    .container-chart-summary {
+        width: 85%;
+        margin-top: 3rem;
+        @include flex(column, center, center);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 3px 2px 3px $boxShadow;
+    }
+    td,
+    th {
+        border: solid 1px black;
+        text-align: center;
+        padding: 1rem;
+    }
+    th {
+        background: #4444eb;
+        color: #ffffff;
+    }
+    tr:nth-child(even) {
+        background-color: $activeColor;
+    }
+}
